@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Rahul juneja is a professional web developer . He knows many programming languages like php, css, html, angularjs etc. He likes to watch movies and video games.">
+    <meta name="description" content="Rahul juneja is a professional web developer. He knows many programming languages like php, css, html, angularjs etc. You can also connect with him on facebook, github, hubhopper, instagram, facebook etc. elcome to his profile.">
     
     <meta name="author" content="Rahul Juneja">
     <meta property="og:title" content="Rahul Juneja">
-    <meta property="og:description" content="Rahul juneja is a professional web developer . He knows many programming languages like php, css, html, angularjs etc. He likes to watch movies and video games.">
+    <meta property="og:description" content="Rahul juneja is a professional web developer . He knows many programming languages like php, css, html, angularjs etc. You can also connect with him on facebook, github, hubhopper, instagram, facebook etc. elcome to his profile.">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="http://rahul-juneja.com">
     <meta property="og:image" content="images/gallery/pp.jpg">
@@ -99,22 +99,28 @@
   <!-- The Grid -->
   <div class="w3-row">
     <!-- Left Column -->
-    <div class="w3-col m3">
+    <div class="w3-col m3" itemscope itemtype="http://schema.org/Person">
       <!-- Profile -->
-      <div class="w3-card-2 w3-round w3-white">
+      <div class="w3-card-2 w3-round w3-white" >
         <div class="w3-container">
-         <h1 class="w3-center">My Profile</h1>
-         <p class="w3-center"><img src="images/gallery/pp.jpg" class="w3-circle cube-106" alt="Rahul Juneja" title="Rahul Juneja"></p>
+         <h1 class="w3-center" title="Rahul Juneja" itemprop="name">Rahul Juneja</h1>
+         <p class="w3-center"><img src="images/gallery/pp.jpg" itemprop="image" class="w3-circle cube-106" alt="Rahul Juneja" title="Rahul Juneja"></p>
          <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Developer, Backend</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> New Delhi, India</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> June, 1994 </p>
+            <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> <span itemprop="jobTitle"> Web Developer, Backend </span> </p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> New Delhi, <span itemprop="nationality"> India </span> </p>
+         <p>
+             <i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 
+             <span itemprop="birthDate"> June, 1994 </span>
+            </p>
          <p><i class="fa fa fa-globe fa-fw w3-margin-right w3-text-theme"></i> 
             <a href="http://rjuneja.com" title="Rahul Juneja"> rjuneja.com </a> 
                 <b> , </b>
             <a href="http://rahul-juneja.com" title="Rahul Juneja"> rahul-juneja.com </a> 
          </p>
-         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> <a href="mailto:rahul.juneja3@gmail.com" target="_top">rahul.juneja3@gmail.com</a> </p>
+         <p>
+             <i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> 
+             <a href="mailto:rahul.juneja3@gmail.com" target="_top" itemprop="email">rahul&#46;juneja3&#64;gmail&#46;com</a> 
+          </p>
         </div>
       </div>
       <br>
@@ -281,8 +287,10 @@
 <footer class="w3-container w3-theme-d3 w3-padding-16">
   <h5> Thanks for viewing my profile, mate. </h5>
 </footer>
-    <h1 class="hidden" title="Rahul juneja"> Rahul juneja</h1>
+    <h1 class="hidden" title="Rahul juneja"> My Profile</h1>
     <h1 class="hidden" title="profile"> profile </h1>
+    <h2 class="hidden" title="developer"> developer </h2>
+    <h3 class="hidden" title="rj"> rj </h3>
  
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script>
