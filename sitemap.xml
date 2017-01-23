@@ -4,8 +4,22 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>http://rahul-juneja.com/</loc>
+  <lastmod>2017-01-23T07:25:28+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rahul-juneja.com/sudoku.html</loc>
+  <lastmod>2017-01-23T07:25:28+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rahul-juneja.com/photos.html</loc>
+  <lastmod>2017-01-23T07:25:28+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rahul-juneja.com/quotes.html</loc>
+  <lastmod>2017-01-23T07:25:28+00:00</lastmod>
 </url>
 </urlset>

@@ -288,7 +288,7 @@
 		
 		function addValidator(){ // validator will check for the entered number is valid 
 			$timerExecute = 1;
-			$('.timeTakenConatiner').show();
+			$('.timeTakenConatiner').removeClass('hidden');
 			
 			$('input[type="number"]').change(function(){
 				$pos = $(this).attr("id");

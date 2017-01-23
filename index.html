@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title> Rahul Juneja </title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="description" content="Rahul juneja is a professional web developer . He knows many programming languages like php, css, html, angularjs etc. He likes to watch movies and video games.">
     
@@ -26,7 +26,23 @@
         html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         a{ text-decoration: none; }
         .hidden{ display:none; visibility:hidden; }
+        .cube-25{ height:25px;width:25px; }
+        .cube-40{ width:40px;height:40px; }
+        .cube-106{ height:106px;width:106px; }
+        .mtop-51px{ margin-top:51px; }
+        .page-container{ max-width:1400px;margin-top:80px; }
     </style>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53890245-6', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 <body class="w3-theme-l5">
 
@@ -65,11 +81,11 @@
   </li>
   <li class="w3-hide-small w3-right">
       <a href="/" class="w3-padding-large w3-hover-white" title="Rahul Juneja">
-          <img src="images/gallery/pp.jpg" class="w3-circle" style="height:25px;width:25px" alt="Rahul Juneja" title="Rahul Juneja"></a>
+          <img src="images/gallery/pp.jpg" class="w3-circle cube-25" alt="Rahul Juneja" title="Rahul Juneja"></a>
   </li>
  </ul>
 </div>
-<div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+<div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium w3-top mtop-51px">
   <ul class="w3-navbar w3-left-align w3-large w3-theme">
     <li><a class="w3-padding-large" href="http://blog.rjuneja.com" title="Blog"> <i class="fa fa-globe"></i> &nbsp; &nbsp; Blog </a></li>
     <li><a class="w3-padding-large" href="sudoku.html" title="Sudoku" ><i class="fa fa-gamepad"></i> &nbsp; &nbsp; Sudoku game </a></li>
@@ -79,7 +95,7 @@
 </div>
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+<div class="w3-container w3-content page-container">    
   <!-- The Grid -->
   <div class="w3-row">
     <!-- Left Column -->
@@ -87,8 +103,8 @@
       <!-- Profile -->
       <div class="w3-card-2 w3-round w3-white">
         <div class="w3-container">
-         <h4 class="w3-center">My Profile</h4>
-         <p class="w3-center"><img src="images/gallery/pp.jpg" class="w3-circle" style="height:106px;width:106px" alt="Rahul Juneja" title="Rahul Juneja"></p>
+         <h1 class="w3-center">My Profile</h1>
+         <p class="w3-center"><img src="images/gallery/pp.jpg" class="w3-circle cube-106" alt="Rahul Juneja" title="Rahul Juneja"></p>
          <hr>
          <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Developer, Backend</p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> New Delhi, India</p>
@@ -106,14 +122,29 @@
       <!-- Accordion -->
       <div class="w3-card-2 w3-round">
         <div class="w3-accordion w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Skills</button>
-          <div id="Demo1" class="w3-accordion-content w3-container">
-            <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/PHP" title="PHP" > PHP </a> </p>
-            <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="CSS" > CSS </a> </p>
-            <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/HTML" title="HTML" > HTML </a> </p>
-            <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/AngularJS" title="AngularJS" > AngularJS </a> </p>  
-            <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Node.js" title="Node.JS" > Node.JS </a> </p>
-          </div>
+            
+          <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Work History </button>
+             <div id="Demo3" class="w3-accordion-content w3-container">
+                  <p> <a rel="nofollow" href="http://hubhopper.com" title="Hubhopper"> Hubhopper (2015 - current) </a> </p>
+                  <p> <a rel="nofollow" href="http://instatemonks.com/" title="Instatemonks" > Instatemonks (2014 - 2015) </a> </p>
+              </div>
+            
+          <button onclick="myFunction('Demo1')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Skills </button>
+              <div id="Demo1" class="w3-accordion-content w3-container">
+                <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/PHP" title="PHP" > PHP </a> </p>
+                <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" title="CSS" > CSS </a> </p>
+                <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/HTML" title="HTML" > HTML </a> </p>
+                <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/AngularJS" title="AngularJS" > AngularJS </a> </p>  
+                <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Node.js" title="Node.JS" > Node.JS </a> </p>
+              </div>
+            
+        <button onclick="myFunction('Demo4')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Operating Systems </button>
+             <div id="Demo4" class="w3-accordion-content w3-container">
+                  <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Ubuntu_(operating_system)" title="Ubuntu"> Ubuntu </a> </p>
+                  <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Windows" > Microsoft Windows </a> </p>
+                  <p> <a rel="nofollow" href="https://en.wikipedia.org/wiki/Android_(operating_system)" title="Android" > Android </a> </p>
+              </div>
+            
           <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Profiles </button>
           <div id="Demo2" class="w3-accordion-content w3-container">
               <p> <a rel="nofollow" href="https://www.linkedin.com/in/rahuljuneja1" title="Linkedin Profile"> Linkedin </a> </p>
@@ -122,14 +153,9 @@
               <p> <a rel="nofollow" href="http://hubhopper.com/hub/rahuljuneja1" title="Hubhopper Profile"> Hubhopper </a> </p>
               <p> <a rel="nofollow" href="https://twitter.com/rahuljuneja94" title="Twitter Profile" > Twitter </a> </p>
               <p> <a rel="nofollow" href="https://www.instagram.com/bazinga.rj" title="Instagram Profile" > Instagram </a> </p>
+              <p> <a rel="nofollow" href="https://in.pinterest.com/rahuljuneja3/" title="Pinterest Profile" > Pinterest </a> </p>
               <p> <a rel="nofollow" href="https://github.com/bazingarj" title="Github Profile" > Github </a> </p>
           </div>
-             
-            <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Work History </button>
-             <div id="Demo3" class="w3-accordion-content w3-container">
-                  <p> <a rel="nofollow" href="http://hubhopper.com" title="Hubhopper"> Hubhopper (2015 - current) </a> </p>
-                  <p> <a rel="nofollow" href="http://instatemonks.com/" title="Instatemonks" > Instatemonks (2014 - 2015) </a> </p>
-              </div>
             
           <!--<button onclick="myFunction('Demo4')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> Work History </button>
           <div id="Demo4" class="w3-accordion-content w3-container">
@@ -202,6 +228,8 @@
     
     <!-- Right Column -->
     <div class="w3-col m0">
+        <p>
+        </p>
       <!--<div class="w3-card-2 w3-round w3-white w3-center">
         <div class="w3-container">
           <p>Upcoming Events:</p>
@@ -237,7 +265,7 @@
       
       <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center">
         <p><i class="fa fa-bug w3-xxlarge"></i></p>
-      </div>
+      </div>-->
       
     <!-- End Right Column -->
     </div>
@@ -253,7 +281,8 @@
 <footer class="w3-container w3-theme-d3 w3-padding-16">
   <h5> Thanks for viewing my profile, mate. </h5>
 </footer>
-
+    <h1 class="hidden" title="Rahul juneja"> Rahul juneja</h1>
+    <h1 class="hidden" title="profile"> profile </h1>
  
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script>
@@ -295,7 +324,7 @@ function getPosts(){
                                 '<hr class="w3-clear">'+
                                 '<p> '+result.items[i].content+' </p>'+
                                     ' </a> <a href="'+result.items[i].author.url+'" rel="nofollow" title="'+result.items[i].author.displayName+'"> '+
-                                  '<img src="'+result.items[i].author.image.url+'" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:40px;height:40px"> '+result.items[i].author.displayName+' </a>'+
+                                  '<img src="'+result.items[i].author.image.url+'" alt="Avatar" class="w3-left w3-circle w3-margin-right cube-40"> '+result.items[i].author.displayName+' </a>'+
                                   '<span class="w3-right w3-opacity"> '+dateToStr(result.items[i].updated)+' </span>'+
                                   '<br/><br/>'+
                               '</div>'       
