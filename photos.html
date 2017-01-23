@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Photos </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Rahul juneja is a professional web developer . He knows many programming languages like php, css, html, angularjs etc. He likes to watch movies and video games.">
+    
+    
+    <meta property="og:title" content="Photos">
+    <meta property="og:description" content="Discover the rahul's most recent photos and favourite pictures. Purpose of this page is just to tell you how rj looks like currenlty or mostly. ">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="http://rahul-juneja.com/photos.html">
+    <meta property="og:image" content="images/gallery/pp.jpg">
+    <meta property="og:site_name" content="Rahul Juneja">
+    <meta property="fb:admins" content="bazinga.rj">
+    
+    <meta name="author" content="Rahul Juneja">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+        a{ text-decoration: none; }
+        .hidden{ display:none; visibility:hidden; }
+        .pic{ overflow: hidden; }
+        .pic > div{ width: 100% ; height:100%; position:relative; overflow:hidden;}
+        .pic > div > img { width: 100% ; height:100%;border: 1px solid #aaa; cursor:pointer; 
+            -webkit-transition: all 0.5s linear; 
+            -moz-transition: all 0.5s linear; 
+            -o-transition: all 0.5s linear; 
+            transition: all 0.5s linear; 
+        }
+        .pic > div > img:hover{ transform: scale(1.06,1.06); }
+        .pic > div > span{ position:absolute; width:100%; min-height: 30px; background-color: rgba(0,0,0,0.4); left: 0; bottom: 0; padding: 5px 10px; color: #fff;  font-size:12px; letter-spacing:  0.1px; }
+    </style>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </li>
+  <li>
+      <a href="/" class="w3-padding-large w3-theme-d4">
+          <i class="fa fa-home w3-margin-right"></i> Profile 
+      </a>
+  </li>
+  <li class="w3-hide-small">
+      <a href="http://blog.rjuneja.com" class="w3-padding-large w3-hover-white" title="Blog" >
+          <i class="fa fa-globe"></i>
+      </a>
+  </li>
+  <li class="w3-hide-small">
+      <a href="sudoku.html" class="w3-padding-large w3-hover-white" title="Sudoku" >
+        <i class="fa fa-gamepad"></i>
+      </a>
+   </li>
+  <li class="w3-hide-small">
+      <a href="photos.html" class="w3-padding-large w3-hover-white" title="Photos" >
+          <i class="fa fa-folder"></i>
+      </a>
+  </li>
+  <li class="w3-hide-small">
+      <a href="quotes.html" class="w3-padding-large w3-hover-white" title="Favourite Quotes" >
+          <i class="fa fa-commenting"></i>
+        </a>
+  </li>
+  <li class="w3-hide-small w3-right">
+      <a href="/" class="w3-padding-large w3-hover-white" title="Rahul Juneja">
+          <img src="images/gallery/pp.jpg" class="w3-circle" style="height:25px;width:25px" alt="Rahul Juneja" title="Rahul Juneja"></a>
+  </li>
+ </ul>
+</div>
+<div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+  <ul class="w3-navbar w3-left-align w3-large w3-theme">
+    <li><a class="w3-padding-large" href="http://blog.rjuneja.com" title="Blog"> <i class="fa fa-globe"></i> &nbsp; &nbsp; Blog </a></li>
+    <li><a class="w3-padding-large" href="sudoku.html" title="Sudoku" ><i class="fa fa-gamepad"></i> &nbsp; &nbsp; Sudoku game </a></li>
+    <li><a class="w3-padding-large" href="photos.html" title="Photos" >  <i class="fa fa-folder"></i> &nbsp; &nbsp; Photos </a></li>
+    <li><a class="w3-padding-large" href="quotes.html" title="Favourite Quotes" > <i class="fa fa-commenting"></i> &nbsp; &nbsp; Favourite Quotes </a></li>
+  </ul>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m1">
+    &nbsp;
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m10" id="Posts">
+        
+          <div class="w3-col m3 pic">   
+              <div>
+                <img src="images/gallery/being-different.jpg" alt="Being Different" title="Being Different"> 
+                <span> Being Different </span>  
+              </div>
+              <div>
+                <img src="images/gallery/just-clicking.jpg" alt="Just click" title="Just click"> 
+                <span> Just click </span>  
+              </div>
+              <div>      
+                <img src="images/gallery/mediocre-developer-forgot-to-code-right.jpg" alt="Mediocre developer forgot to code right" title="Mediocre developer forgot to code right" >
+                <span> Mediocre developer forgot to code right </span>  
+              </div>  
+              <div>
+                <img src="images/gallery/who-is-robot.jpg" alt="Don't know, who is robot" title="Don't know, who is robot">
+                <span> Don't know, who is robot </span>  
+              </div>
+          </div>
+          <div class="w3-col m3 pic"> 
+              <div>
+                <img src="images/gallery/developer-time-pass.jpg" alt="Developer time pass" title="Developer time pass">
+                  <span> Developer time pass </span>
+              </div>
+              <div>
+                <img src="images/gallery/my-desk.jpg" alt="My work Desk" title="My work Desk">
+                <span> My work Desk </span>
+              </div>
+              <div>
+                <img src="images/gallery/nature-from-camera.jpg" alt="Nature from camera" title="Nature from camera">
+                <span> Nature from camera </span>
+              </div>
+              <div>
+                <img src="images/gallery/pp.jpg" alt="Profile Picture" title="Profile Picture">
+                <span> Profile Picture </span>
+              </div>
+          </div>
+          <div class="w3-col m3 pic">   
+              <div>
+                <img src="images/gallery/for-instagram-need-different.jpg" alt="For instagram need something different" title="For instagram need something different"> 
+                  <span> For instagram need something different </span>
+              </div>
+              <div>
+                <img src="images/gallery/office-fun.jpg" alt="Office Fun" title="Office Fun">
+                  <span> Office Fun </span>
+              </div>
+              <div>
+                <img src="images/gallery/timepass-selfie.jpg" alt="Timepass selfie" title="Timepass selfie">
+                  <span> Timepass selfie </span>
+              </div>
+          </div>
+          <div class="w3-col m3 pic">   
+              <div>
+                <img src="images/gallery/hungry-crew-mates.jpg" alt="Hungry crew mates" title="Hungry crew mates"> 
+                  <span> Hungry crew mates </span>
+              </div>
+              <div>
+                <img src="images/gallery/timepass-selfie-1.jpg" alt="Got bored, so clicked one" title="Got bored, so clicked one"> 
+                  <span> Got bored, so clicked one </span>
+              </div>
+              <div>
+                <img src="images/gallery/ubuntu-still-running-one-year-done.jpg" alt="Still with ubuntu after one long year journey" title="Still with ubuntu after one long year journey"> 
+                  <span> Still with ubuntu after one long year journey </span>
+              </div>
+          </div>
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m1">
+      &nbsp;
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5> Thanks for viewing my profile, mate. </h5>
+</footer>
+
+ 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+    
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navMobile");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    
+</body>
+</html> 

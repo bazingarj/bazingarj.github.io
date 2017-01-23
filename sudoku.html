@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Sudoku </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="Play sudoku puzzle and refresh your mind. Sudoku puzzle help you to sharp your mathematical skills.">
+    
+    
+    <meta property="og:title" content="Sudoku">
+    <meta property="og:description" content="Play sudoku puzzle and refresh your mind. Sudoku puzzle help you to sharp your mathematical skills.">
+    <meta property="og:type" content="game">
+    <meta property="og:url" content="http://rahul-juneja.com/sudoku.html">
+    <meta property="og:image" content="images/gallery/pp.jpg">
+    <meta property="og:site_name" content="Rahul Juneja">
+    <meta property="fb:admins" content="bazinga.rj">
+    
+    <meta name="author" content="Rahul Juneja">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/inclusive.css" />
+    <link rel="stylesheet" type="text/css" href="css/popUp.css" />
+    
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+        a{ text-decoration: none; }
+        .hidden{ display:none; visibility:hidden; }
+    </style>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </li>
+  <li>
+      <a href="/" class="w3-padding-large w3-theme-d4">
+          <i class="fa fa-home w3-margin-right"></i> Profile 
+      </a>
+  </li>
+  <li class="w3-hide-small">
+      <a href="http://blog.rjuneja.com" class="w3-padding-large w3-hover-white" title="Blog" >
+          <i class="fa fa-globe"></i>
+      </a>
+  </li>
+  <li class="w3-hide-small">
+      <a href="sudoku.html" class="w3-padding-large w3-hover-white" title="Sudoku" >
+        <i class="fa fa-gamepad"></i>
+      </a>
+   </li>
+  <li class="w3-hide-small">
+      <a href="photos.html" class="w3-padding-large w3-hover-white" title="Photos" >
+          <i class="fa fa-folder"></i>
+      </a>
+  </li>
+  <li class="w3-hide-small">
+      <a href="quotes.html" class="w3-padding-large w3-hover-white" title="Favourite Quotes" >
+          <i class="fa fa-commenting"></i>
+        </a>
+  </li>
+  <li class="w3-hide-small w3-right">
+      <a href="/" class="w3-padding-large w3-hover-white" title="Rahul Juneja">
+          <img src="images/gallery/pp.jpg" class="w3-circle" style="height:25px;width:25px" alt="Rahul Juneja" title="Rahul Juneja"></a>
+  </li>
+ </ul>
+</div>
+<div id="navMobile" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+  <ul class="w3-navbar w3-left-align w3-large w3-theme">
+    <li><a class="w3-padding-large" href="http://blog.rjuneja.com" title="Blog"> <i class="fa fa-globe"></i> &nbsp; &nbsp; Blog </a></li>
+    <li><a class="w3-padding-large" href="sudoku.html" title="Sudoku" ><i class="fa fa-gamepad"></i> &nbsp; &nbsp; Sudoku game </a></li>
+    <li><a class="w3-padding-large" href="photos.html" title="Photos" >  <i class="fa fa-folder"></i> &nbsp; &nbsp; Photos </a></li>
+    <li><a class="w3-padding-large" href="quotes.html" title="Favourite Quotes" > <i class="fa fa-commenting"></i> &nbsp; &nbsp; Favourite Quotes </a></li>
+  </ul>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    
+    <!-- Middle Column -->
+    <div class="w3-col m12" id="Posts">
+        <div class='newGameContainer'>
+          <h2> Start New Game:</h2>
+            <table id='difficulties'>
+                <tr>
+                    <td data-val='veryEasy' class='option'><div> very easy </div> </td>
+                    <td data-val='easy' class='option' > <div> easy </div> </td>
+                    <td data-val='medium' class='option'> <div> Medium </div> </td>
+                    <td data-val='hard' class='option'> <div> Hard </div> </td>
+                    <td data-val='veryHard'  class='option'> <div> Very Hard</div> </td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                    <td class='startGame'> <div> Start </div> </td>
+                    <td></td> <td></td>
+                </tr>
+            </table>
+        </div>
+        <table class="sudokuContainer">
+        </table>
+	
+        <!-- timer view -->
+            <div class='timeTakenConatiner' style='display:none;'>
+                <div>Time taken :</div>
+                <div>
+                    <span id='hours'>0</span> :
+                    <span id='minutes'>0</span> :
+                    <span id='seconds'>0</span>
+                    <button onclick='pauseTimer()' id='controlTimer'>pause</button>
+                </div>
+            </div>
+        <!-- timer view -->
+          
+        <table class='popUpContainer'>
+            <tr class='popUpContainerBlock'><td></td><td></td><td></td></tr>
+            <tr class='popUpContainerBlock'>
+                <td></td>
+                <td class='popUp'>
+                    <div class='popUpHeader'></div>
+                    <div class='popUpBody'><div class='popUpBodyContent'></div></div>
+                    <table class='popUpActions'>
+                        <tr class='Actions'><td class='popUpActionsOk'></td></tr>
+                    </table>
+                </td><td></td>
+            </tr>
+            <tr class='popUpContainerBlock'><td></td><td></td><td></td></tr>
+        </table>
+    <!-- End Middle Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5> Thanks for viewing my profile, mate. </h5>
+</footer>
+
+ 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sudoku.js"></script>
+	<script type="text/javascript" src="js/timer.js"></script>
+    
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navMobile");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+    
+</body>
+</html> 
