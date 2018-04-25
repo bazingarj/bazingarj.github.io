@@ -252,43 +252,6 @@
 <script type="text/javascript" src="js/jquery.min.js" defer></script>
 <script type="text/javascript" src="js/home.js" defer></script>
 
-<script type="text/javascript">
-  var temp = Math.floor(elapsed_time / 1000);
-  var years = Math.floor(temp / 31536000);
-  if (years) {
-      return years + ' year' + numberEnding(years);
-  }
-    
-  var weeks = Math.floor((temp %= 31536000) / 604800);
-  if (weeks) {
-      if( weeks > 5){
-          months = weeks/4.5;
-        return parseInt(months) + ' month' + numberEnding(months);  
-      } else {
-        return weeks + ' week' + numberEnding(weeks);
-      }
-  }
-    
-  var days = Math.floor((temp %= 31536000) / 86400);
-  if (days) {
-      return days + ' day' + numberEnding(days);
-  }
-  var hours = Math.floor((temp %= 86400) / 3600);
-  if (hours) {
-      return hours + ' hour' + numberEnding(hours);
-  }
-  var minutes = Math.floor((temp %= 3600) / 60);
-  if (minutes) {
-      return minutes + ' minute' + numberEnding(minutes);
-  }
-  var seconds = temp % 60;
-  if (seconds) {
-      return seconds + ' second' + numberEnding(seconds);
-  }
-  return 'just now'; //'just now' //or other string you like;
-}
-$(document).ready(function(){ getPosts(); });
-</script>
 <div class="hidden">
   <h4 title="bazinga">bazinga</h4><h4 title="bazingarj">bazingarj</h4><h4 title="rj">rj</h4><h4 title="rahulj">rahulj</h4><h4 title="rahul juneaj">rahul juneaj</h4> <h4 title="rahul june">rahul june</h4> <h4 title="rahuljun">rahuljun</h4> <h4 title="raja">raja</h4> <h4 title="rahuj">rahuj</h4> <h4 title="rahula">rahula</h4> <h4 title="rahulju">rahulju</h4> <h4 title="raj juneja">raj juneja</h4> <h4 title="rakesh juneja">rakesh juneja</h4> <h4 title="juneaj">juneaj</h4> <h4 title="rahul.juneja">rahul.juneja</h4> <h4 title="rahul_juneja">rahul_juneja</h4> <h4 title="rjuneja">rjuneja</h4> <h4 title="rahu.juneja">rahu.juneja</h4> <h4 title="rahu_juneja">rahu_juneja</h4> <h4 title="hacker.juneja">hacker.juneja</h4> <h4 title="hacker_juneja">hacker_juneja</h4>  <h4 title="ghefk">ghefk</h4> <h4 title="uwjfhudjhbjdklihridnrjfigvuger">uwjfhudjhbjdklihridnrjfigvuger</h4> <h4 title="Donald trump">Donald trump</h4> <h4 title="Modi">Modi</h4><h4 title="Illuminati">Illuminati</h4> <h4 title="putin">putin</h4> <h4 title="programming">programming</h4> <h4 title="man, woman, child, boy, girl, baby">man, woman, child, boy, girl, baby </h4>
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Blog","url":"http://blog.rjuneja.com"}</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Personal","url":"http://rahul-juneja.com","sameAs":["https://www.facebook.com/rahuljuneja0","https://plus.google.com/103023123894316472294","https://plus.google.com/103023123894316472294"]}</script>

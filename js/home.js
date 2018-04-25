@@ -51,21 +51,24 @@ function getPosts(){
         complete: function(){ $('#loadingPosts').addClass('hidden'); }
     });    
 }
+function numberEnding (number) {
+  return (number > 1) ? 's' : '';
+}
 function dateToStr(k) {
+
     var j = k.split('T');
-    var input_date = j[0]+" "+j[1].split("-")[0];
-  input_date= input_date+" UTC";
+    //var input_date = j[0]+" "+j[1].split("-")[0];
+   //input_date += " UTC";
   // convert times in milliseconds
-  var input_time_in_ms = new Date(input_date).getTime();
+  var a = j[0].split('-');
+  var b = j[1].split(':');
+  var input_time_in_ms = new Date(a[0], a[1], a[2], b[0], [1], [2]).getTime();
   var current_time_in_ms = new Date().getTime();
   var elapsed_time = current_time_in_ms - input_time_in_ms;
 
-  function numberEnding (number) {
-      return (number > 1) ? 's' : '';
-  }
-
   var temp = Math.floor(elapsed_time / 1000);
   var years = Math.floor(temp / 31536000);
+
   if (years) {
       return years + ' year' + numberEnding(years);
   }
