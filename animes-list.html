@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Photos </title>
+    <title> My Anime Series/Movies </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Rahul juneja is a professional web developer . He knows many programming languages like php, css, html, angularjs etc. He likes to watch movies and video games.">
+    <meta name="description" content="List of Animes Series/Movies Watched/Watching/Yet To Watch By me.">
     
     
-    <meta property="og:title" content="Photos">
-    <meta property="og:description" content="Discover the rahul's most recent photos and favourite pictures. Purpose of this page is just to tell you how rj looks like currenlty or mostly. ">
+    <meta property="og:title" content="My Anime Series/Movies">
+    <meta property="og:description" content="List of Animes Series/Movies Watched/Watching/Yet To Watch By me.">
     <meta property="og:type" content="blog">
-    <meta property="og:url" content="http://rahul-juneja.com/photos.html">
+    <meta property="og:url" content="http://rahul-juneja.com/animes-list.html">
     <meta property="og:image" content="images/gallery/pp.jpg">
     <meta property="og:site_name" content="Rahul Juneja">
     <meta property="fb:admins" content="bazinga.rj">
@@ -43,6 +43,46 @@
         }
         .pic > div > img:hover{ transform: scale(1.06,1.06); }
         .pic > div > span{ position:absolute; width:100%; min-height: 30px; background-color: rgba(0,0,0,0.4); left: 0; bottom: 0; padding: 5px 10px; color: #fff;  font-size:12px; letter-spacing:  0.1px; }
+        .anime-card{
+            background-color: rgba(0,0,0,0.02);
+            border-radius: 5px;
+            overflow: hidden;
+            font-size: 12px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            height: 500px;
+            overflow: hidden;
+            cursor: pointer;
+            color: #4d636f;
+            margin-right: 0px;
+            padding: 10px;
+            box-shadow: 0px 0px 10px #fff inset;
+            -webkit-transition: transform 0.3s ease;
+            -ms-transition: transform 0.3s ease;
+            -o-transition: transform 0.3s ease;
+            transition: transform 0.3s ease;
+        }
+        .anime-card:hover{
+          -webkit-transform: scale(1.11,1.11);
+          -ms-transform: scale(1.11,1.11);
+          -o-transform: scale(1.11,1.11);
+          transform: scale(1.11,1.11);
+          box-shadow: 0px 0px 10px #4d636f;;
+          background-color: #eee;
+        }
+        .anime-card img{
+            max-width: 90%;
+            margin: 0 auto;
+            min-height: 70px;
+            display: block;
+            max-height: 310px;
+        }
+        .anime-card .w3-container{
+            text-align: left !important;
+        }
+        .anime-card .w3-container p{
+            line-height: 12px;
+        }
     </style>'
     
     <script async>
@@ -63,17 +103,17 @@
  <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
   <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
     <a class="w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
-        <i class="fa fa-bars"></i>
+      <i class="fa fa-bars"></i>
     </a>
   </li>
   <li>
       <a href="/" class="w3-padding-large w3-theme-d4">
-          <i class="fa fa-home w3-margin-right"></i> Profile 
+        <i class="fa fa-home w3-margin-right"></i> Profile 
       </a>
   </li>
   <li class="w3-hide-small">
       <a href="http://blog.rjuneja.com" class="w3-padding-large w3-hover-white" title="Blog" >
-          <i class="fa fa-globe"></i>
+        <i class="fa fa-globe"></i>
       </a>
   </li>
   <li class="w3-hide-small">
@@ -83,13 +123,13 @@
    </li>
   <li class="w3-hide-small">
       <a href="photos.html" class="w3-padding-large w3-hover-white" title="Photos" >
-          <i class="fa fa-folder"></i>
+        <i class="fa fa-folder"></i>
       </a>
   </li>
   <li class="w3-hide-small">
       <a href="quotes.html" class="w3-padding-large w3-hover-white" title="Favourite Quotes" >
-          <i class="fa fa-commenting"></i>
-        </a>
+        <i class="fa fa-commenting"></i>
+      </a>
   </li>
   <li class="w3-hide-small">
       <a href="animes-list.html" class="w3-padding-large w3-hover-white" title="My Anime Series/Movies" >
@@ -98,7 +138,8 @@
   </li>
   <li class="w3-hide-small w3-right">
       <a href="/" class="w3-padding-large w3-hover-white" title="Rahul Juneja">
-          <img src="images/gallery/pp.jpg" class="w3-circle cube-25" alt="Rahul Juneja" title="Rahul Juneja"></a>
+        <img src="images/gallery/pp.jpg" class="w3-circle cube-25" alt="Rahul Juneja" title="Rahul Juneja">
+      </a>
   </li>
  </ul>
 </div>
@@ -115,89 +156,10 @@
 <!-- Page Container -->
 <div class="w3-container w3-content page-container" >    
   <!-- The Grid -->
-  <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m1">
-    &nbsp;
-    <!-- End Left Column -->
-    </div>
-    
-    <!-- Middle Column -->
-    <div class="w3-col m10" id="Posts">
-        
-          <div class="w3-col m3 pic">   
-              <div>
-                <img src="images/gallery/being-different.jpg" alt="Being Different" title="Being Different"> 
-                <span> Being Different </span>  
-              </div>
-              <div>
-                <img src="images/gallery/just-clicking.jpg" alt="Just click" title="Just click"> 
-                <span> Just click </span>  
-              </div>
-              <div>      
-                <img src="images/gallery/mediocre-developer-forgot-to-code-right.jpg" alt="Mediocre developer forgot to code right" title="Mediocre developer forgot to code right" >
-                <span> Mediocre developer forgot to code right </span>  
-              </div>  
-              <div>
-                <img src="images/gallery/who-is-robot.jpg" alt="Don't know, who is robot" title="Don't know, who is robot">
-                <span> Don't know, who is robot </span>  
-              </div>
-          </div>
-          <div class="w3-col m3 pic"> 
-              <div>
-                <img src="images/gallery/developer-time-pass.jpg" alt="Developer time pass" title="Developer time pass">
-                  <span> Developer time pass </span>
-              </div>
-              <div>
-                <img src="images/gallery/my-desk.jpg" alt="My work Desk" title="My work Desk">
-                <span> My work Desk </span>
-              </div>
-              <div>
-                <img src="images/gallery/nature-from-camera.jpg" alt="Nature from camera" title="Nature from camera">
-                <span> Nature from camera </span>
-              </div>
-              <div>
-                <img src="images/gallery/pp.jpg" alt="Profile Picture" title="Profile Picture">
-                <span> Profile Picture </span>
-              </div>
-          </div>
-          <div class="w3-col m3 pic">   
-              <div>
-                <img src="images/gallery/for-instagram-need-different.jpg" alt="For instagram need something different" title="For instagram need something different"> 
-                  <span> For instagram need something different </span>
-              </div>
-              <div>
-                <img src="images/gallery/office-fun.jpg" alt="Office Fun" title="Office Fun">
-                  <span> Office Fun </span>
-              </div>
-              <div>
-                <img src="images/gallery/timepass-selfie.jpg" alt="Timepass selfie" title="Timepass selfie">
-                  <span> Timepass selfie </span>
-              </div>
-          </div>
-          <div class="w3-col m3 pic">   
-              <div>
-                <img src="images/gallery/hungry-crew-mates.jpg" alt="Hungry crew mates" title="Hungry crew mates"> 
-                  <span> Hungry crew mates </span>
-              </div>
-              <div>
-                <img src="images/gallery/timepass-selfie-1.jpg" alt="Got bored, so clicked one" title="Got bored, so clicked one"> 
-                  <span> Got bored, so clicked one </span>
-              </div>
-              <div>
-                <img src="images/gallery/ubuntu-still-running-one-year-done.jpg" alt="Still with ubuntu after one long year journey" title="Still with ubuntu after one long year journey"> 
-                  <span> Still with ubuntu after one long year journey </span>
-              </div>
-          </div>
-    <!-- End Middle Column -->
-    </div>
-    
-    <!-- Right Column -->
-    <div class="w3-col m1">
-      &nbsp;
-    <!-- End Right Column -->
-    </div>
-    
+  <h1> List of Anime Movies/Series selected by me... </h1>
+  <br />
+  <div class="w3-row" id="anime-card-container">
+       <div class="loader"></div> 
   <!-- End Grid -->
   </div>
   
@@ -211,9 +173,9 @@
 </footer>
 
  
-<script type="text/javascript" src="js/jquery.min.js" defer></script>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
 
-    
+
 <script>
 // Accordion
 function myFunction(id) {
@@ -237,6 +199,48 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
+i=0 
+function getAnimes(url){
+  var airingStatus = { 1 : "Currenlty Airing", 2 : "Finished Airing", 3 : "Not Yet Aired" };
+  $.ajax({
+      type: 'GET',
+      dataType: "json",
+      crossDomain: true,
+      async:true,
+      url:url,
+      cache: true,
+      success: function(res){
+        $('#anime-card-container').empty();
+        for(var i in res){
+            var im = res[i]['anime_image_path'].replace('/r/96x136', '');
+            $('#anime-card-container').append('<div class="w3-col l3 m3 s12 anime-card" onclick="openInNewTab(\'https://myanimelist.net'+res[i]['anime_url']+'\')">'+
+                                                '<img src="'+im+'" alt="'+res[i]['anime_title']+'" >'+
+                                                '<div class="w3-container w3-center">'+
+                                                  '<p><b>Title: </b> '+res[i]['anime_title']+'</p>'+
+                                                  '<p><b>Media Type: </b> '+res[i]['anime_media_type_string']+'</p>'+
+                                                  '<p><b>Status: </b> '+airingStatus[res[i]['anime_airing_status']]+'</p>'+
+                                                  '<p><b>MPAA Rating: </b> '+res[i]['anime_mpaa_rating_string']+'</p>'+
+                                                  '<p><b>Episodes Watched: </b> '+res[i]['num_watched_episodes']+'<b>/</b>'+( parseInt(res[i]['anime_num_episodes']) == 0 ? '?' : res[i]['anime_num_episodes'] ) +'</p>'+
+                                                  '<p><b>My Rating:  </b> '+(parseInt(res[i]['score']) == 0 ? "Not Yet Rated" : res[i]['score']+"/10")+'</p>'+
+                                                '</div>'+
+                                              '</div>');
+        }
+    
+      },error: function(res){
+         if(i === 0){
+            i += 1;
+            getAnimes('test.json');
+          }
+      }
+  });
+}
+getAnimes('https://rahu996.000webhostapp.com/get.php');
 </script>
 
 <script type="application/ld+json">{"@context":"http://schema.org","@type":"Blog","url":"http://blog.rjuneja.com"}</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Personal","url":"http://rahul-juneja.com","sameAs":["https://www.facebook.com/rahuljuneja0","https://plus.google.com/103023123894316472294","https://plus.google.com/103023123894316472294"]}</script>   
