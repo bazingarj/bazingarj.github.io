@@ -38,7 +38,8 @@ function getPosts(){
                                   '<img src="'+result.items[i].author.image.url+'" alt="Avatar" class="w3-left w3-circle w3-margin-right cube-40"> '+result.items[i].author.displayName+' </a>'+
                                   '<span class="w3-right w3-opacity"> '+dateToStr(result.items[i].updated)+' </span>'+
                                   '<br/><br/>'+
-                              '</div>'       
+                              '</div>';
+                    console.log(str);
                 }
                 $('#Posts').append(str);
             } else {
