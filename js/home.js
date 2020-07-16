@@ -33,7 +33,7 @@ function getPosts(){
                                 '<a href="'+result.items[i].url+'" rel="nofollow" title="'+result.items[i].title+'" >'+
                                   '<p> <b> '+result.items[i].title+' </b> </p>'+
                                 '<hr class="w3-clear">'+
-                                '<p> '+result.items[i].content+' </p>'+
+                                '<p class="content-card-optimized"> '+result.items[i].content+' </p>'+
                                     ' </a> <a href="'+result.items[i].author.url+'" rel="nofollow" title="'+result.items[i].author.displayName+'"> '+
                                   '<img src="'+result.items[i].author.image.url+'" alt="Avatar" class="w3-left w3-circle w3-margin-right cube-40"> '+result.items[i].author.displayName+' </a>'+
                                   '<span class="w3-right w3-opacity"> '+dateToStr(result.items[i].updated)+' </span>'+
@@ -62,7 +62,7 @@ function dateToStr(k) {
   // convert times in milliseconds
   var a = j[0].split('-');
   var b = j[1].split(':');
-  var input_time_in_ms = new Date(a[0], a[1], a[2], b[0], [1], [2]).getTime();
+  var input_time_in_ms = new Date(a[0], a[1]-1, a[2], b[0], [1], [2]).getTime();
   var current_time_in_ms = new Date().getTime();
   var elapsed_time = current_time_in_ms - input_time_in_ms;
 
